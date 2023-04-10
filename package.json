@@ -1,7 +1,6 @@
 {
   "name": "react-beautiful-dnd",
   "version": "13.1.1",
-  "type": "module",
   "description": "Beautiful and accessible drag and drop for lists with React",
   "author": "Alex Reardon <areardon@atlassian.com>",
   "keywords": [
@@ -55,8 +54,8 @@
     "storybook": "start-storybook -p 9002",
     "build-storybook": "build-storybook -c .storybook -o site",
     "prepublishOnly": "yarn build",
-    "rimraf": "./node_modules/rimraf/bin.js",
-    "preinstall": "yarn build"
+    "prepare": "yarn build",
+    "prepack": "yarn build"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
